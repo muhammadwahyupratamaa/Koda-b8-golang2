@@ -12,6 +12,11 @@ type The struct{
 	best string 
 }
 
+type Hello struct{
+	world string
+}
+
+
 func main() {
 we := We{
 	are: Are{
@@ -21,5 +26,10 @@ we := We{
 	} ,
 }
 
+hello := Hello{
+	world : "Hello World",
+}
+
 fmt.Println(we.are.the.best)
+fmt.Println(hello.world)
 }
